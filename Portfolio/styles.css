@@ -7,45 +7,235 @@ body {
     color: #333;
 }
 
+/* Cabecera que ocupa toda la pantalla */
 header {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(imgs/ondas.webp) no-repeat center center/cover;
     color: #fff;
+    text-align: center;
 }
 
-h1 {
-    margin: 0;
+/* Efecto de máquina de escribir */
+.typewriter {
     font-size: 48px;
+    margin: 0;
+    border-right: 2px solid #fff; /* Cursor parpadeante */
+    white-space: nowrap; /* Evita saltos de línea */
+    overflow: hidden; /* Esconde el texto hasta que se vaya "escribiendo" */
+    width: 23ch; /* El ancho ajustado al número de caracteres de la frase */
+    animation: typing 3s steps(23, end) forwards, blink-caret 0.75s step-end 4s 1 forwards; /* Sincronización */
+}
+
+/* Animación del texto "escribiéndose" */
+@keyframes typing {
+    from {
+        width: 0ch; /* Empieza con un ancho de 0 caracteres */
+    }
+    to {
+        width: 23ch; /* Finaliza con el ancho de la frase */
+    }
+}
+
+/* Animación del cursor parpadeante */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #fff;
+    }
+}
+
+/* Efecto de desvanecimiento (fade-in) para el párrafo */
+.fade-in {
+    font-size: 24px;
+    margin-top: 10px;
+    opacity: 0; /* Empieza invisible */
+    animation: fadeIn 2s ease-in-out forwards;
+    animation-delay: 3.2s; /* Retrasar para que aparezca después del h1 */
+}
+
+/* Animación del párrafo */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Comienza invisible */
+    }
+    to {
+        opacity: 1; /* Desvanece a visible */
+    }
 }
 
 p {
     font-size: 18px;
 }
 
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .foto-parrafo {
+        margin: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .foto-parrafo .imagen-asier img {
+        padding-right: 0;
+    }
+    .foto-parrafo .titulo-parrafo {
+        width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .conocimientos-gallery {
+        margin: 0 20px;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 90px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    #sobre-mi, #conocimientos, #projects {
+        padding-top: 200px;
+        margin: 100px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    li {
+        padding: 10px;
+        border-bottom: 1px solid white;
+      }
+    nav ul li {
+        margin-right: 20px;
+    }
+    .con-borde {
+        border-top: 1px solid white;
+    }
+}
+
+@media (max-width: 768px) {
+    .typewriter {
+        font-size: 28px;
+    }
+    .fade-in {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .redes img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    #contacto {
+        margin: 25px 0px;
+        padding-top: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    #sobre-mi, #projects {
+        margin: 25px;
+    }
+}
+
 .foto-parrafo {
     display: flex;
-    margin: 0 400px;
+    justify-content: center;
+    align-items: center;
 }
 
 .imagen-asier {
-    padding-right: 90px;
+    margin: 10px;
 }
 
-.conocimientos {
-    margin: 50px;
+.imagen-asier img {
+    border-radius: 8px;
+    padding-right: 80px;
+}
+
+.titulo-parrafo {
+    width: 600px;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+}
+
+.redes a {
+    margin: 20px;
+}
+
+.curriculum a {
+    background-color: rgba(210, 215, 211, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.conocimiento {
+    margin: 20px;
     width: 300px;
 }
 
-.conocimientos img {
+.conocimiento img {
     width: 60%;
-    border-radius: 8px;
 }
 
-.conocimientos p {
+.conocimiento p {
     display: inline-block;
-    background-color: rgba(210, 215, 211, 0.6);
-    opacity: 0.6;
+    background-color: rgba(210, 215, 211, .6);
     padding: 10px;
     border-radius: 10px;
 }
@@ -55,20 +245,15 @@ p {
     justify-content: center;
 }
 
-#projects, #sobre-mi {
-    padding: 50px;
+section {
+    padding-top: 100px;
+    margin: 100px;
     text-align: center;
-}
-
-.project-gallery {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 .project {
     margin: 20px;
-    width: 300px;
+    width: 230px !important;
 }
 
 .project img {
@@ -78,12 +263,83 @@ p {
 
 .project h3 {
     margin: 10px 0;
-    font-size: 24px;
 }
 
+details summary:hover {
+    cursor: pointer;
+    color: #555;
+    text-decoration: underline;
+}
+
+/* Estilos del formulario de contacto */
+#contacto {
+    padding: 100px 50px;
+    text-align: center;
+}
+
+#contacto form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contacto form label {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+#contacto form input,
+#contacto form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+#contacto form textarea {
+    height: 150px;
+}
+
+#contacto form button {
+    padding: 15px 30px;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contacto form button:hover {
+    background-color: #555;
+}
+
+
 footer {
+    display: flex;
+    justify-content: space-around;
     text-align: center;
     padding: 20px;
     background-color: #333;
     color: #fff;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+    }
 }
