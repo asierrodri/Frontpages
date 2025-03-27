@@ -217,6 +217,22 @@ nav ul li a:hover {
     margin: 20px;
 }
 
+.curriculum a {
+    background-color: rgb(173, 175, 174);
+    padding: 18px;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .curriculum a {
+        padding: 29px; /* Reduce el padding */
+        border-radius: 60px; /* Ajusta el border-radius */
+        font-size: 2rem; /* Reduce el tamaño de la fuente */
+    }
+}
+
 .conocimiento {
     margin: 20px;
     width: 300px;
