@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Gracias por tu mensaje</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KQKS5NNCCB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KQKS5NNCCB');
+    </script>
     <style>
         body {
             display: flex;
@@ -16,6 +27,7 @@
             padding: 2rem;
             text-align: center;
         }
+
         .thank-you-container {
             max-width: 600px;
             background: white;
@@ -23,16 +35,19 @@
             border-radius: 1rem;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
         }
+
         .thank-you-container h1 {
             font-size: 2.25rem;
             color: #2563EB;
             margin-bottom: 1rem;
         }
+
         .thank-you-container p {
             font-size: 1.125rem;
             color: #4B5563;
             margin-bottom: 2rem;
         }
+
         .thank-you-container a {
             display: inline-block;
             padding: 0.75rem 1.5rem;
@@ -43,11 +58,13 @@
             text-decoration: none;
             transition: background-color 0.3s ease;
         }
+
         .thank-you-container a:hover {
             background-color: #1D4ED8;
         }
     </style>
 </head>
+
 <body>
     <div class="thank-you-container">
         <h1>¡Gracias por tu mensaje!</h1>
@@ -55,4 +72,5 @@
         <a href="index.html">Volver al inicio</a>
     </div>
 </body>
+
 </html>
