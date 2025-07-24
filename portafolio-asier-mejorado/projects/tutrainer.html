@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>TuTrainer - Caso de Estudio | Asier Rodríguez</title>
+    <meta
+        content="Caso de estudio del proyecto TuTrainer: aplicación web para conectar entrenadores personales con usuarios."
+        name="description" />
+    <meta content="tutrainer, entrenadores, app entrenamiento, responsive, UX/UI, caso de estudio" name="keywords" />
+    <!-- Open Graph tags -->
+    <meta content="TuTrainer - Caso de Estudio | Asier Rodríguez" property="og:title" />
+    <meta content="Aplicación web responsive para encontrar entrenadores personales filtrando por especialidad."
+        property="og:description" />
+    <meta content="article" property="og:type" />
+    <meta content="../images/tutrainer.png" property="og:image" />
+    <!-- Favicon -->
+    <link href="../images/favicon.ico" rel="icon" type="image/x-icon" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Styles -->
+    <link href="../css/styles.css" rel="stylesheet" />
+    <link href="../css/project-detail.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav" id="main-nav">
+        <div class="nav-container">
+            <a class="nav-logo" href="../index.html">
+                <span class="logo-text">Asier Rodríguez</span>
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a class="nav-link" href="../index.html#inicio">Inicio</a>
+                <a class="nav-link" href="../index.html#sobre-mi">Sobre Mí</a>
+                <a class="nav-link" href="../index.html#proyectos">Proyectos</a>
+                <a class="nav-link" href="../index.html#habilidades">Habilidades</a>
+                <a class="nav-link" href="../index.html#contacto">Contacto</a>
+            </div>
+            <button aria-label="Abrir menú" class="nav-toggle" id="nav-toggle">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+    <!-- Project Hero Section -->
+    <section class="project-hero">
+        <div class="container">
+            <div class="project-hero-content">
+                <div class="project-breadcrumb">
+                    <a href="../index.html">Inicio</a>
+                    <span class="breadcrumb-separator">→</span>
+                    <a href="../index.html#proyectos">Proyectos</a>
+                    <span class="breadcrumb-separator">→</span>
+                    <span>TuTrainer</span>
+                </div>
+                <h1 class="project-title">TuTrainer</h1>
+                <p class="project-subtitle">App web para conectar entrenadores con usuarios</p>
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Tipo</span>
+                        <span class="meta-value">Proyecto Personal</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Fecha</span>
+                        <span class="meta-value">2025</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Mi Rol</span>
+                        <span class="meta-value">Diseño y Desarrollo Full Stack</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Duración</span>
+                        <span class="meta-value">4 semanas</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a class="btn btn-primary" href="https://tu-trainer.vercel.app/" target="_blank">Ver Demo en
+                        Vivo</a>
+                    <a class="btn btn-secondary" href="https://github.com/asierrodri/TuTrainer" target="_blank">Ver
+                        Código en GitHub</a>
+                </div>
+            </div>
+            <div class="project-hero-image">
+                <img alt="TuTrainer - Vista principal de la app" class="hero-image" src="../images/tutrainer.png" />
+            </div>
+        </div>
+    </section>
+    <!-- Project Content -->
+    <main class="project-content">
+        <div class="container">
+            <!-- Project Overview -->
+            <section class="content-section">
+                <h2 class="section-title">Resumen del Proyecto</h2>
+                <div class="content-grid">
+                    <div class="content-text">
+                        <p class="text-large">TuTrainer es una aplicación web desarrollada con Next.js que conecta
+                            usuarios con entrenadores personales. Permite filtrar entrenadores por especialidad, ver
+                            perfiles detallados y próximamente permitirá registrarse e interactuar.</p>
+                        <p>Cuenta con backend propio desarrollado en Node.js y Express, base de datos MongoDB, y una
+                            interfaz moderna con Tailwind CSS. El objetivo es ofrecer una experiencia funcional y
+                            escalable que simula una app real de contratación de entrenadores.</p>
+                    </div>
+                    <div class="content-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Responsive</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">95+</span>
+                            <span class="stat-label">Lighthouse Score</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5</span>
+                            <span class="stat-label">Tecnologías</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Challenge Section -->
+            <section class="content-section">
+                <h2 class="section-title">El Desafío</h2>
+                <div class="challenge-content">
+                    <div class="challenge-text">
+                        <h3>Objetivos del Proyecto</h3>
+                        <ul class="challenge-list">
+                            <li>Permitir buscar entrenadores por especialidad de forma intuitiva</li>
+                            <li>Ofrecer perfiles limpios, visuales y bien estructurados</li>
+                            <li>Implementar filtros sin necesidad de registro</li>
+                            <li>Diseñar un sistema escalable con backend simulado</li>
+                        </ul>
+                        <h3>Restricciones y Limitaciones</h3>
+                        <ul class="challenge-list">
+                            <li>Desarrollo sin backend real en la fase MVP</li>
+                            <li>Funcionalidades limitadas al entorno del navegador</li>
+                            <li>No incluye sistema real de autenticación aún</li>
+                            <li>Diseño y funcionalidad equilibrados sin frameworks pesados</li>
+                        </ul>
+                    </div>
+                    <div class="challenge-visual">
+                        <div class="challenge-card">
+                            <h4>Problema Principal</h4>
+                            <p>¿Cómo crear una app atractiva y funcional que permita encontrar entrenadores sin
+                                necesidad de registro previo y con buena experiencia de usuario?</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Process Section -->
+            <section class="content-section">
+                <h2 class="section-title">Mi Proceso</h2>
+                <div class="process-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker">1</div>
+                        <div class="timeline-content">
+                            <h3>Investigación de mercado</h3>
+                            <p>Estudié aplicaciones similares como Entrenarme y Urban Sports Club para entender sus
+                                puntos fuertes y debilidades.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">Benchmarking</span>
+                                <span class="tag">Análisis UX</span>
+                                <span class="tag">Investigación</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">2</div>
+                        <div class="timeline-content">
+                            <h3>Wireframes y validación</h3>
+                            <p>Diseñé wireframes iniciales y validé la estructura con usuarios reales para simplificar
+                                la navegación.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">Wireframes</span>
+                                <span class="tag">Prototipos</span>
+                                <span class="tag">Mobile-first</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">3</div>
+                        <div class="timeline-content">
+                            <h3>Desarrollo UI</h3>
+                            <p>Implementé una interfaz moderna con tarjetas para entrenadores y filtros por especialidad
+                                usando HTML, CSS y JavaScript.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">Paleta de colores</span>
+                                <span class="tag">Tipografía</span>
+                                <span class="tag">Sistema de diseño</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">4</div>
+                        <div class="timeline-content">
+                            <h3>Simulación de backend</h3>
+                            <p>Los datos de entrenadores están simulados con JSON y gestionados en el frontend para
+                                representar cómo funcionaría con API real.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS Grid</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Technical Solution -->
+            <section class="content-section">
+                <h2 class="section-title">Solución Técnica</h2>
+                <div class="tech-content">
+                    <div class="tech-stack">
+                        <h3>Tecnologías Usadas</h3>
+                        <div class="tech-grid">
+                            <div class="tech-item">
+                                <div class="tech-icon">
+                                    <svg fill="none" height="32" stroke="currentColor" stroke-width="2"
+                                        viewbox="0 0 24 24" width="32">
+                                        <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"></polygon>
+                                    </svg>
+                                </div>
+                                <div class="tech-info">
+                                    <h4>Next.js</h4>
+                                    <p>Framework React para desarrollo web full stack</p>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon">
+                                    <svg fill="none" height="32" stroke="currentColor" stroke-width="2"
+                                        viewbox="0 0 24 24" width="32">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="tech-info">
+                                    <h4>Tailwind CSS</h4>
+                                    <p>Estilos utilitarios para diseño rápido y responsivo</p>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon">
+                                    <svg fill="none" height="32" stroke="currentColor" stroke-width="2"
+                                        viewbox="0 0 24 24" width="32">
+                                        <polyline points="4,17 10,11 4,5"></polyline>
+                                        <line x1="12" x2="20" y1="19" y2="19"></line>
+                                    </svg>
+                                </div>
+                                <div class="tech-info">
+                                    <h4>MongoDB</h4>
+                                    <p>Base de datos NoSQL para almacenar usuarios y entrenadores</p>
+                                </div>
+                            </div>
+
+                            <div class="tech-item">
+                                <div class="tech-icon">
+                                    <svg fill="none" height="32" stroke="currentColor" stroke-width="2"
+                                        viewbox="0 0 24 24" width="32">
+                                        <path d="M12 2l9 5v10l-9 5-9-5V7z"></path>
+                                        <path d="M12 22V12l9-5"></path>
+                                    </svg>
+                                </div>
+                                <div class="tech-info">
+                                    <h4>Node.js &amp; Express</h4>
+                                    <p>Servidor backend para lógica de negocio y API REST</p>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon">
+                                    <svg fill="none" height="32" stroke="currentColor" stroke-width="2"
+                                        viewbox="0 0 24 24" width="32">
+                                        <polyline points="16,18 22,12 16,6"></polyline>
+                                        <polyline points="8,6 2,12 8,18"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="tech-info">
+                                    <h4>Vercel</h4>
+                                    <p>Despliegue rápido y CDN global con soporte para SSR</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech-features">
+                        <h3>Características Técnicas Destacadas</h3>
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <h4>Diseño Responsive</h4>
+                                <p>
+                                    Implementación mobile-first con breakpoints optimizados.
+                                    Uso de CSS Grid para layouts complejos y Flexbox para componentes.
+                                </p>
+                            </div>
+                            <div class="feature-card">
+                                <h4>Optimización de Performance</h4>
+                                <p>
+                                    Imágenes optimizadas con lazy loading, CSS minificado y
+                                    JavaScript optimizado para carga rápida.
+                                </p>
+                            </div>
+                            <div class="feature-card">
+                                <h4>Animaciones Sutiles</h4>
+                                <p>
+                                    Transiciones CSS suaves y animaciones JavaScript para
+                                    mejorar la experiencia sin afectar el rendimiento.
+                                </p>
+                            </div>
+                            <div class="feature-card">
+                                <h4>SEO Optimizado</h4>
+                                <p>
+                                    HTML semántico, meta tags optimizados y estructura
+                                    de datos para mejor indexación.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Results Section -->
+            <section class="content-section">
+                <h2 class="section-title">Resultados y Aprendizajes</h2>
+                <div class="results-content">
+                    <div class="results-metrics">
+                        <h3>Métricas de Rendimiento</h3>
+                        <div class="metrics-grid">
+                            <div class="metric-card">
+                                <span class="metric-value">98</span>
+                                <span class="metric-label">Performance</span>
+                                <span class="metric-source">Lighthouse</span>
+                            </div>
+                            <div class="metric-card">
+                                <span class="metric-value">100</span>
+                                <span class="metric-label">Accesibilidad</span>
+                                <span class="metric-source">Lighthouse</span>
+                            </div>
+                            <div class="metric-card">
+                                <span class="metric-value">100</span>
+                                <span class="metric-label">Buenas prácticas</span>
+                                <span class="metric-source">Lighthouse</span>
+                            </div>
+                            <div class="metric-card">
+                                <span class="metric-value">100</span>
+                                <span class="metric-label">SEO</span>
+                                <span class="metric-source">Lighthouse</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="results-learnings">
+                        <h3>Principales Aprendizajes</h3>
+                        <div class="learnings-list">
+                            <div class="learning-item">
+                                <h4>Full Stack con Next.js</h4>
+                                <p>Profundicé en rutas API, SSR y conexión con bases de datos desde Next.js.</p>
+                            </div>
+                            <div class="learning-item">
+                                <h4>Backend con Express</h4>
+                                <p>Desarrollé una API RESTful para gestionar entrenadores y usuarios desde el servidor.
+                                </p>
+                            </div>
+                            <div class="learning-item">
+                                <h4>Diseño centrado en el usuario</h4>
+                                <p>Diseñé una interfaz simple, rápida y clara, con filtros útiles y buen rendimiento
+                                    móvil.</p>
+                            </div>
+                            <div class="learning-item">
+                                <h4>Escalabilidad y registro</h4>
+                                <p>La estructura actual permite fácilmente incorporar login, autenticación y dashboard
+                                    personalizado.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- Project Navigation -->
+    <section class="project-navigation">
+        <div class="container">
+            <div class="nav-content">
+                <a class="nav-prev" href="arquitectura-bosque.html">
+                    <span class="nav-direction">← Proyecto Anterior</span>
+                    <span class="nav-title">Arquitectura Bosque</span>
+                </a>
+                <a class="nav-home" href="../index.html#proyectos">
+                    <span class="nav-title">Volver a Proyectos</span>
+                </a>
+                <a class="nav-next" href="auriculares-vibeat.html">
+                    <span class="nav-direction">Siguiente Proyecto →</span>
+                    <span class="nav-title">Auriculares Vibeat</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- CTA Section -->
+    <section class="project-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Te gusta lo que ves?</h2>
+                <p>Si tienes un proyecto similar o quieres colaborar, me encantaría conocer más detalles</p>
+                <a class="btn btn-primary" href="../index.html#contacto">
+                    Hablemos de tu proyecto
+                    <svg class="btn-icon" fill="none" height="20" stroke="currentColor" stroke-width="2"
+                        viewbox="0 0 24 24" width="20">
+                        <line x1="22" x2="11" y1="2" y2="13"></line>
+                        <polygon points="22,2 15,22 11,13 2,9 22,2"></polygon>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>© 2025 Asier Rodríguez. Todos los derechos reservados.</p>
+                    <p>Desarrollado con ❤️ y mucho café</p>
+                </div>
+                <div class="footer-social">
+                    <a aria-label="GitHub" class="social-link" href="https://github.com/asierrodri" rel="noopener"
+                        target="_blank">
+                        <svg fill="currentColor" height="20" viewbox="0 0 24 24" width="20">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a aria-label="LinkedIn" class="social-link"
+                        href="https://www.linkedin.com/in/asier-rodr%C3%ADguez-4878a0258/" rel="noopener"
+                        target="_blank">
+                        <svg fill="currentColor" height="20" viewbox="0 0 24 24" width="20">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Back to top button -->
+    <button aria-label="Volver arriba" class="back-to-top" id="back-to-top">
+        <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24">
+            <polyline points="18,15 12,9 6,15"></polyline>
+        </svg>
+    </button>
+    <!-- Scripts -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

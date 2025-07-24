@@ -1078,16 +1078,24 @@ li {
     }
 }
 
-.fade-in-up {
-    animation: fadeInUp 0.6s ease-out;
+.scroll-hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
+.fade-in-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 .fade-in-left {
-    animation: fadeInLeft 0.6s ease-out;
+    animation: fadeInLeft 0.6s ease-out forwards;
 }
 
 .fade-in-right {
-    animation: fadeInRight 0.6s ease-out;
+    animation: fadeInRight 0.6s ease-out forwards;
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
