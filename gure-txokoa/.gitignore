@@ -1,0 +1,27 @@
+# node_modules y carpetas de salida
+node_modules/
+dist/
+build/
+
+# Archivos de lock
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+
+# Archivos temporales y de entorno
+.env
+.env.local
+.env.*.local
+*.log
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Configs de IDE
+.vscode/
+.idea/
+
+# Archivos específicos de Mac o Windows
+*.swp
+*.swo
