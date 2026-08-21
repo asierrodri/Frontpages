@@ -17,22 +17,7 @@ export default function Contact() {
           </div>
 
           {/* Instagram CTA */}
-          <div>
-            <a
-              href="https://instagram.com/mitxicuidados"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button
-                size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground gap-2"
-              >
-                <Instagram className="w-5 h-5" />
-                mitxicuidados
-              </Button>
-            </a>
-          </div>
-
+          
           {/* QR de Instagram */}
           <figure className="pt-6 flex flex-col items-center gap-4">
             <a
