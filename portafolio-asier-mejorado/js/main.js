@@ -280,7 +280,7 @@ document.addEventListener('click', function (e) {
 // ===== CONSOLE WELCOME MESSAGE =====
 console.log(`
 🚀 Portafolio de Asier Rodríguez
-📧 asier.rodriguez18@gmail.com
+📧 arodriguezmdev@gmail.com
 💼 Desarrollador Web Frontend
 
 ¡Gracias por visitar mi portafolio!
